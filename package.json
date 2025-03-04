@@ -1,0 +1,40 @@
+{
+  "name": "axidiata-jewelry1",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "format": "prettier --write .",
+    "test": "jest",
+    "test:watch": "jest --watch",
+    "type-check": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@fontsource/inter": "^5.1.1",
+    "autoprefixer": "^10.4.20",
+    "framer-motion": "^12.0.6",
+    "next": "15.1.6",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "sass": "^1.83.4"
+  },
+  "devDependencies": {
+    "@eslint/eslintrc": "^3",
+    "@testing-library/jest-dom": "^6.1.4",
+    "@testing-library/react": "^14.1.2",
+    "@types/jest": "^29.5.8",
+    "@types/node": "^20",
+    "@types/react": "^18",
+    "@types/react-dom": "^18",
+    "eslint": "^9",
+    "eslint-config-next": "15.1.6",
+    "jest": "^29.7.0",
+    "postcss": "^8.5.1",
+    "prettier": "^3.1.0",
+    "tailwindcss": "^3.4.17",
+    "typescript": "^5"
+  }
+}
