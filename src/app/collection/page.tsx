@@ -6,7 +6,7 @@ import {
   CollectionFilter,
   FilterOption,
 } from "@/components/collection/CollectionFilter";
-import { CollectionCard } from "@/components/collection/CollectionCard";
+import CollectionCard from "@/components/collection/CollectionCard";
 import { ProductDetails } from "@/components/collection/ProductDetails";
 
 const filterOptions: FilterOption[] = [

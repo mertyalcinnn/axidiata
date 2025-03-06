@@ -10,7 +10,7 @@ interface CollectionCardProps {
   onViewDetails: () => void;
 }
 
-const CollectionCard = ({
+export const CollectionCard = ({
   title,
   image,
   id,
@@ -54,5 +54,3 @@ const CollectionCard = ({
     </motion.div>
   );
 };
-
-export default CollectionCard;
