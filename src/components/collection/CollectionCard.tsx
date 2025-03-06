@@ -4,15 +4,27 @@ import Image from "next/image";
 interface CollectionCardProps {
   title: string;
   image: string;
+  id: string;
+  price: string;
+  category: string;
+  onViewDetails: () => void;
 }
 
-export function CollectionCard({ title, image }: CollectionCardProps) {
+export function CollectionCard({
+  title,
+  image,
+  id,
+  price,
+  category,
+  onViewDetails,
+}: CollectionCardProps) {
   return (
     <motion.div
       initial={{ opacity: 0, y: 20 }}
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true }}
-      className="group max-w-[280px] mx-auto"
+      className="group max-w-[280px] mx-auto cursor-pointer"
+      onClick={onViewDetails}
     >
       <div className="relative w-[280px] h-[280px] rounded-lg overflow-hidden bg-neutral-50">
         <Image
