@@ -2,8 +2,8 @@
 
 import { useState } from "react";
 import { motion } from "framer-motion";
-import { ProductSelection } from "@/components/preorder/ProductSelection";
-import { OrderForm } from "@/components/preorder/OrderForm";
+import ProductSelection from "@/components/preorder/ProductSelection";
+import OrderForm from "@/components/preorder/OrderForm";
 import Image from "next/image";
 
 // Örnek ürün verileri
