@@ -97,8 +97,9 @@ export const MissionSection = () => {
               className="absolute bottom-8 left-8 right-8 p-6 bg-white/80 backdrop-blur-sm rounded-xl"
             >
               <p className="text-brown text-lg font-light text-center">
-                Our timeless jewelry pieces are made to complement every woman's
-                unique beauty and empower their divine feminine energy
+                Our timeless jewelry pieces are made to complement every
+                woman&lsquos unique beauty and empower their divine feminine
+                energy
               </p>
             </motion.div>
           </motion.div>

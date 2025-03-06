@@ -1,7 +1,7 @@
-'use client'
+"use client";
 
-import Image from 'next/image'
-import { motion } from 'framer-motion'
+import Image from "next/image";
+import { motion } from "framer-motion";
 
 export function DesignerInfo() {
   return (
@@ -35,20 +35,22 @@ export function DesignerInfo() {
 
             <div className="space-y-4 text-neutral-600">
               <p>
-                With over 15 years of experience in jewelry design, Ayşe brings a unique 
-                perspective that blends traditional Turkish artistry with contemporary 
-                global influences. Her journey in jewelry making began at Istanbul's 
-                prestigious Grand Bazaar, where she apprenticed under master craftsmen.
+                With over 15 years of experience in jewelry design, Ayşe brings
+                a unique perspective that blends traditional Turkish artistry
+                with contemporary global influences. Her journey in jewelry
+                making began at Istanbul&apos;s prestigious Grand Bazaar, where
+                she apprenticed under master craftsmen.
               </p>
               <p>
-                Ayşe's designs are inspired by the rich cultural heritage of Istanbul, 
-                sacred geometry, and the natural world. Each piece she creates is a 
-                testament to her commitment to excellence and innovation in jewelry design.
+                Ayşe&apos;s designs are inspired by the rich cultural heritage
+                of Istanbul, sacred geometry, and the natural world. Each piece
+                she creates is a testament to her commitment to excellence and
+                innovation in jewelry design.
               </p>
               <p>
-                Her work has been featured in various international exhibitions and has 
-                earned recognition for its distinctive blend of traditional craftsmanship 
-                and modern aesthetics.
+                Her work has been featured in various international exhibitions
+                and has earned recognition for its distinctive blend of
+                traditional craftsmanship and modern aesthetics.
               </p>
             </div>
 
@@ -64,5 +66,5 @@ export function DesignerInfo() {
         </div>
       </div>
     </section>
-  )
+  );
 }

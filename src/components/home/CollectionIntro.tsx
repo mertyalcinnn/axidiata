@@ -62,7 +62,7 @@ const CollectionIntro = () => {
               transition={{ duration: 0.8, delay: 0.8 }}
               className="text-gray-700 font-light leading-relaxed"
             >
-              THE NEW "SYMMETRY" LINE IS MADE TO INSPIRE WOMEN ALL AROUND THE
+              THE NEW SYMMETRY LINE IS MADE TO INSPIRE WOMEN ALL AROUND THE
               WORLD TO REMEMBER THEIR WHOLENESS.
             </motion.p>
             <motion.p
@@ -87,9 +87,9 @@ const CollectionIntro = () => {
               </h3>
               <p className="text-sand text-sm mb-6">THE FOUNDER</p>
               <p className="text-gray-700 font-light leading-relaxed italic">
-                "IT IS A SHAME THAT WOMEN FORGET THEIR WHOLENESS, THEIR BEAUTY,
+                IT IS A SHAME THAT WOMEN FORGET THEIR WHOLENESS, THEIR BEAUTY,
                 THEIR POWER. THAT IS WHY I HAVE CREATED THIS COLLECTION – TO
-                REMIND WOMEN HOW MAGNIFICENT THEY ARE."
+                REMIND WOMEN HOW MAGNIFICENT THEY ARE.
               </p>
             </motion.div>
           </motion.div>

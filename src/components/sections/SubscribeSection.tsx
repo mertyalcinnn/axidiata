@@ -71,7 +71,7 @@ export const SubscribeSection = () => {
               transition={{ delay: 0.3 }}
               className="text-xl text-white/90 mb-8"
             >
-              SUBSCRIBE TO GET NOTIFIED OF THE "SYMMETRY" LAUNCH
+              SUBSCRIBE TO GET NOTIFIED OF THE SYMMETRY LAUNCH
             </motion.p>
 
             <form onSubmit={handleSubmit} className="space-y-6">

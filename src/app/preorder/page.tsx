@@ -4,6 +4,7 @@ import { useState } from "react";
 import { motion } from "framer-motion";
 import { ProductSelection } from "@/components/preorder/ProductSelection";
 import { OrderForm } from "@/components/preorder/OrderForm";
+import Image from "next/image";
 
 // Örnek ürün verileri
 const preorderProducts = [
@@ -33,6 +34,12 @@ const preorderProducts = [
   },
 ];
 
+interface FormData {
+  name: string;
+  email: string;
+  // diğer form alanları
+}
+
 export default function PreorderPage() {
   const [selectedProduct, setSelectedProduct] = useState<
     (typeof preorderProducts)[0] | null
@@ -42,7 +49,7 @@ export default function PreorderPage() {
     setSelectedProduct(product);
   };
 
-  const handleFormSubmit = async (formData: any) => {
+  const handleFormSubmit = async (formData: FormData) => {
     // API entegrasyonu burada yapılacak
     console.log("Form submitted:", { product: selectedProduct, formData });
     // TODO: API call to submit preorder
@@ -53,10 +60,12 @@ export default function PreorderPage() {
       {/* Banner Section */}
       <div className="relative h-[400px] w-full mb-16">
         <div className="absolute inset-0">
-          <img
+          <Image
             src="/images/preorder.jpg" // Banner görselinizi buraya ekleyin
             alt="Preorder Banner"
             className="w-full h-full object-cover"
+            width={1920}
+            height={1080}
           />
           <div className="absolute inset-0 bg-black/40" />{" "}
           {/* Karanlık overlay */}

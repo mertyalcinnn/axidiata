@@ -18,7 +18,7 @@ export default function ContactPage() {
           >
             <h1 className="text-4xl font-light mb-4">Contact Us</h1>
             <p className="max-w-xl mx-auto px-4">
-              We're here to help and answer any questions you might have
+              We&apos;re here to help and answer any questions you might have
             </p>
           </motion.div>
         </div>

@@ -69,9 +69,10 @@ export const DivinityCollection = () => {
                   </h3>
                   <p className="text-sand text-lg leading-relaxed">
                     These 14K yellow gold rings capture the radiant essence of
-                    Apollo, god of light and arts. Each piece reflects the sun's
-                    brilliance, combining fluid forms with bold geometry to
-                    create a statement of divine creativity and power.
+                    Apollo, god of light and arts. Each piece reflects the
+                    sun&lsquos brilliance, combining fluid forms with bold
+                    geometry to create a statement of divine creativity and
+                    power.
                   </p>
                 </motion.div>
               </div>
@@ -126,8 +127,8 @@ export const DivinityCollection = () => {
                     Venera Collection
                   </h3>
                   <p className="text-sand text-lg leading-relaxed">
-                    This exquisite 14K yellow gold ring embodies Venus's divine
-                    grace and beauty. The sculptural profile captures the
+                    This exquisite 14K yellow gold ring embodies Venus&lsquos
+                    divine grace and beauty. The sculptural profile captures the
                     essence of love and harmony, creating a piece that
                     celebrates the eternal feminine spirit.
                   </p>
