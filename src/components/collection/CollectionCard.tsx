@@ -10,14 +10,14 @@ interface CollectionCardProps {
   onViewDetails: () => void;
 }
 
-export function CollectionCard({
+const CollectionCard = ({
   title,
   image,
   id,
   price,
   category,
   onViewDetails,
-}: CollectionCardProps) {
+}: CollectionCardProps) => {
   return (
     <motion.div
       initial={{ opacity: 0, y: 20 }}
@@ -25,6 +25,7 @@ export function CollectionCard({
       viewport={{ once: true }}
       className="group max-w-[280px] mx-auto cursor-pointer"
       onClick={onViewDetails}
+      data-id={id}
     >
       <div className="relative w-[280px] h-[280px] rounded-lg overflow-hidden bg-neutral-50">
         <Image
@@ -47,7 +48,11 @@ export function CollectionCard({
 
       <div className="mt-3 text-center px-2">
         <h3 className="text-sm font-medium mt-1 mb-0.5">{title}</h3>
+        <p className="text-sm">{category}</p>
+        <p className="text-lg font-bold">${price}</p>
       </div>
     </motion.div>
   );
-}
+};
+
+export default CollectionCard;
