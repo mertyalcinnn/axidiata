@@ -5,8 +5,8 @@ import { motion } from "framer-motion";
 
 const CollectionIntro = () => {
   return (
-    <section className="w-full py-32 bg-white">
-      <div className="max-w-6xl mx-auto px-4">
+    <section className="w-full py-16 sm:py-24 md:py-32 bg-white">
+      <div className="max-w-6xl mx-auto px-4 sm:px-6">
         {/* Top Section */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -21,12 +21,12 @@ const CollectionIntro = () => {
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.2 }}
-          className="font-serif text-brown text-6xl mb-24"
+          className="font-serif text-brown text-4xl sm:text-5xl md:text-6xl mb-12 sm:mb-16 md:mb-24"
         >
           SYMMETRY
         </motion.h2>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-20">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 sm:gap-12 md:gap-16 lg:gap-20">
           {/* Founder Image */}
           <motion.div
             initial={{ opacity: 0, scale: 0.95 }}

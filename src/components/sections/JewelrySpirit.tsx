@@ -5,9 +5,9 @@ import Image from "next/image";
 
 export const JewelrySpirit = () => {
   return (
-    <section className="py-24 bg-gradient-to-b from-sand/10 to-white overflow-hidden">
+    <section className="py-12 sm:py-16 md:py-24 bg-gradient-to-b from-sand/10 to-white overflow-hidden">
       <div className="container mx-auto px-4">
-        <div className="grid lg:grid-cols-2 gap-12 items-center">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 sm:gap-12 items-center">
           {/* Left side - Visual */}
           <div className="relative">
             <div className="relative aspect-square">
@@ -26,7 +26,7 @@ export const JewelrySpirit = () => {
 
           {/* Right side - Content */}
           <div className="space-y-8">
-            <h2 className="text-5xl font-light text-brown leading-tight">
+            <h2 className="text-3xl sm:text-4xl md:text-5xl font-light text-brown leading-tight">
               The Harmony of <br />
               <span className="font-medium">Soul and Body</span>
             </h2>
@@ -87,7 +87,7 @@ export const JewelrySpirit = () => {
             <motion.button
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
-              className="mt-8 px-8 py-4 bg-sand text-white rounded-full hover:bg-darkGray transition-all duration-300 shadow-lg hover:shadow-xl"
+              className="mt-6 sm:mt-8 px-6 sm:px-8 py-3 sm:py-4 bg-sand text-white rounded-full hover:bg-darkGray transition-all duration-300 shadow-lg hover:shadow-xl text-sm sm:text-base"
             >
               Explore the Collection
             </motion.button>

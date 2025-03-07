@@ -22,10 +22,10 @@ export function ContactInfo() {
         <div>
           <h3 className="font-medium mb-1">Email</h3>
           <a
-            href="mailto:info@axidiata.com"
+            href="mailto:info@axadiata.com"
             className="text-neutral-600 hover:text-black transition-colors"
           >
-            info@axidiata.com
+            info@axadiata.com
           </a>
         </div>
 

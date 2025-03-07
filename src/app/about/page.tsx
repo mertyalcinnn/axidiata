@@ -9,7 +9,7 @@ export default function AboutPage() {
   return (
     <main>
       {/* Hero Section */}
-      <section className="relative h-[400px] bg-neutral-900">
+      <section className="relative h-[300px] sm:h-[350px] md:h-[400px] bg-neutral-900">
         <div className="absolute inset-0 bg-[url('/images/about.jpg')] bg-cover bg-center opacity-50" />
         <div className="relative h-full flex items-center justify-center text-center">
           <motion.div
@@ -17,9 +17,11 @@ export default function AboutPage() {
             animate={{ opacity: 1, y: 0 }}
             className="text-white space-y-4"
           >
-            <h1 className="text-4xl md:text-5xl font-light">Our Story</h1>
+            <h1 className="text-3xl sm:text-4xl md:text-5xl font-light">
+              Our Story
+            </h1>
             <p className="max-w-xl mx-auto px-4">
-              Discover the artistry and passion behind Axidiata Jewelry
+              Discover the artistry and passion behind Axadiata Jewelry
             </p>
           </motion.div>
         </div>

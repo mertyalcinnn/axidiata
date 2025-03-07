@@ -8,7 +8,7 @@ export default function ContactPage() {
   return (
     <main className="min-h-screen bg-white">
       {/* Hero Section */}
-      <section className="relative h-[300px] bg-neutral-900">
+      <section className="relative h-[250px] sm:h-[300px] bg-neutral-900">
         <div className="absolute inset-0 bg-[url('/images/contact.jpg')] bg-cover bg-center opacity-40" />
         <div className="relative h-full flex items-center justify-center">
           <motion.div
@@ -16,7 +16,7 @@ export default function ContactPage() {
             animate={{ opacity: 1, y: 0 }}
             className="text-center text-white"
           >
-            <h1 className="text-4xl font-light mb-4">Contact Us</h1>
+            <h1 className="text-3xl sm:text-4xl font-light mb-2 sm:mb-4">Contact Us</h1>
             <p className="max-w-xl mx-auto px-4">
               We&apos;re here to help and answer any questions you might have
             </p>
@@ -25,9 +25,9 @@ export default function ContactPage() {
       </section>
 
       {/* Contact Content */}
-      <section className="py-20">
+      <section className="py-12 sm:py-16 md:py-20">
         <div className="max-w-6xl mx-auto px-4">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-16">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 sm:gap-12 lg:gap-16">
             <motion.div
               initial={{ opacity: 0, x: -20 }}
               animate={{ opacity: 1, x: 0 }}
@@ -38,7 +38,7 @@ export default function ContactPage() {
             <motion.div
               initial={{ opacity: 0, x: 20 }}
               animate={{ opacity: 1, x: 0 }}
-              className="bg-neutral-50 p-8 rounded-lg"
+              className="bg-neutral-50 p-4 sm:p-6 md:p-8 rounded-lg"
             >
               <ContactForm />
             </motion.div>
@@ -47,7 +47,7 @@ export default function ContactPage() {
       </section>
 
       {/* Map Section */}
-      <section className="h-[400px] bg-neutral-100">
+      <section className="h-[300px] sm:h-[350px] md:h-[400px] bg-neutral-100">
         {/* Harita entegrasyonu burada yapılacak */}
         <div className="w-full h-full bg-neutral-200" />
       </section>

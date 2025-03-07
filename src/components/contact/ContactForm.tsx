@@ -31,7 +31,7 @@ export function ContactForm() {
   }
 
   return (
-    <form onSubmit={handleSubmit} className="space-y-6">
+    <form onSubmit={handleSubmit} className="space-y-4 sm:space-y-6">
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
         <div>
           <label htmlFor="name" className="block text-sm mb-2">
@@ -44,7 +44,7 @@ export function ContactForm() {
             value={formData.name}
             onChange={handleChange}
             required
-            className="w-full px-4 py-3 border border-neutral-200 rounded-lg focus:outline-none focus:ring-1 focus:ring-black"
+            className="w-full px-3 sm:px-4 py-2 sm:py-3 border border-neutral-200 rounded-lg focus:outline-none focus:ring-1 focus:ring-black text-sm sm:text-base"
           />
         </div>
 
@@ -59,7 +59,7 @@ export function ContactForm() {
             value={formData.email}
             onChange={handleChange}
             required
-            className="w-full px-4 py-3 border border-neutral-200 rounded-lg focus:outline-none focus:ring-1 focus:ring-black"
+            className="w-full px-3 sm:px-4 py-2 sm:py-3 border border-neutral-200 rounded-lg focus:outline-none focus:ring-1 focus:ring-black text-sm sm:text-base"
           />
         </div>
       </div>
@@ -75,7 +75,7 @@ export function ContactForm() {
           value={formData.subject}
           onChange={handleChange}
           required
-          className="w-full px-4 py-3 border border-neutral-200 rounded-lg focus:outline-none focus:ring-1 focus:ring-black"
+          className="w-full px-3 sm:px-4 py-2 sm:py-3 border border-neutral-200 rounded-lg focus:outline-none focus:ring-1 focus:ring-black text-sm sm:text-base"
         />
       </div>
 
@@ -90,13 +90,13 @@ export function ContactForm() {
           onChange={handleChange}
           required
           rows={6}
-          className="w-full px-4 py-3 border border-neutral-200 rounded-lg focus:outline-none focus:ring-1 focus:ring-black"
+          className="w-full px-3 sm:px-4 py-2 sm:py-3 border border-neutral-200 rounded-lg focus:outline-none focus:ring-1 focus:ring-black text-sm sm:text-base"
         />
       </div>
 
       <button
         type="submit"
-        className="w-full bg-black text-white py-4 rounded-lg hover:bg-neutral-800 transition-colors"
+        className="w-full bg-black text-white py-3 sm:py-4 rounded-lg hover:bg-neutral-800 transition-colors text-sm sm:text-base"
       >
         Send Message
       </button>

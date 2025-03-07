@@ -77,10 +77,10 @@ export default function CollectionPage() {
   };
 
   return (
-    <div className="py-20 bg-white">
+    <div className="pt-24 sm:pt-28 pb-16 sm:pb-20 bg-white">
       <div className="max-w-[1200px] mx-auto px-4">
         <header className="text-center mb-12">
-          <h1 className="text-2xl font-light mb-6">Our Collection</h1>
+          <h1 className="text-xl sm:text-2xl font-light mb-4 sm:mb-6">Our Collection</h1>
           <CollectionFilter
             options={filterOptions}
             selectedFilter={selectedFilter}
@@ -90,7 +90,7 @@ export default function CollectionPage() {
 
         <motion.div
           layout
-          className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 gap-y-10"
+          className="grid grid-cols-1 xs:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 sm:gap-6 gap-y-8 sm:gap-y-10"
         >
           {filteredCollections.map((item) => (
             <CollectionCard

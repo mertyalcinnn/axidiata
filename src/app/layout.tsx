@@ -1,18 +1,18 @@
-import type { Metadata } from 'next'
-import { playfair, inter } from '@/utils/fonts'
-import Header from '@/components/layout/Header'
-import Footer from '@/components/layout/Footer'
-import './globals.css'
+import type { Metadata } from "next";
+import { playfair, inter } from "@/utils/fonts";
+import Header from "@/components/layout/Header";
+import Footer from "@/components/layout/Footer";
+import "./globals.css";
 
 export const metadata: Metadata = {
-  title: 'Axidiata Jewelry',
-  description: 'Exclusive Diamond Jewelry Collection',
-}
+  title: "AxaDiata Jewelry",
+  description: "Exclusive Diamond Jewelry Collection",
+};
 
 export default function RootLayout({
   children,
 }: {
-  children: React.ReactNode
+  children: React.ReactNode;
 }) {
   return (
     <html lang="en" className={`${playfair.variable} ${inter.variable}`}>
@@ -22,5 +22,5 @@ export default function RootLayout({
         <Footer />
       </body>
     </html>
-  )
+  );
 }
