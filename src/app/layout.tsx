@@ -5,7 +5,7 @@ import Footer from "@/components/layout/Footer";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "AxaDiata Jewelry",
+  title: "AXADIATA Jewelry",
   description: "Exclusive Diamond Jewelry Collection",
 };
 

@@ -35,7 +35,7 @@ export function ProductDetails({ isOpen, onClose, product }: ProductDetailsProps
             animate={{ x: 0 }}
             exit={{ x: '100%' }}
             transition={{ type: 'tween', duration: 0.3 }}
-            className="fixed right-0 top-0 h-full w-full max-w-[500px] bg-white shadow-lg z-50"
+            className="fixed right-0 top-0 h-full w-full sm:max-w-[450px] md:max-w-[500px] bg-white shadow-lg z-50 overflow-y-auto"
           >
             <div className="relative h-full overflow-auto">
               {/* Close button */}
@@ -60,7 +60,7 @@ export function ProductDetails({ isOpen, onClose, product }: ProductDetailsProps
 
               <div className="p-6">
                 {/* Product Image */}
-                <div className="relative w-[280px] h-[280px] mx-auto rounded-lg overflow-hidden">
+                <div className="relative w-full sm:w-[280px] h-[280px] mx-auto rounded-lg overflow-hidden">
                   <Image
                     src={product.image}
                     alt={product.title}
@@ -75,18 +75,18 @@ export function ProductDetails({ isOpen, onClose, product }: ProductDetailsProps
                     {product.category}
                   </div>
                   
-                  <h2 className="text-2xl font-medium">{product.title}</h2>
+                  <h2 className="text-xl sm:text-2xl font-medium">{product.title}</h2>
                   
                   <p className="text-neutral-600">{product.description}</p>
                   
-                  <div className="text-xl font-medium">{product.price}</div>
+                  <div className="text-lg sm:text-xl font-medium">{product.price}</div>
 
                   <div className="pt-4 space-y-3">
-                    <button className="w-full py-3 bg-black text-white hover:bg-neutral-800 transition-colors">
+                    <button className="w-full py-2 sm:py-3 bg-black text-white hover:bg-neutral-800 transition-colors text-sm sm:text-base">
                       Add to Cart
                     </button>
                     
-                    <button className="w-full py-3 border border-black hover:bg-neutral-50 transition-colors">
+                    <button className="w-full py-2 sm:py-3 border border-black hover:bg-neutral-50 transition-colors text-sm sm:text-base">
                       Add to Wishlist
                     </button>
                   </div>

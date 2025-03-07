@@ -28,7 +28,7 @@ const itemVariants = {
 
 export const GoldCollection = () => {
   return (
-    <section className="py-32 bg-gradient-to-b from-white to-sand/10 overflow-hidden">
+    <section className="py-16 sm:py-24 md:py-32 bg-gradient-to-b from-white to-sand/10 overflow-hidden">
       <motion.div
         className="container mx-auto px-4"
         variants={containerVariants}
@@ -37,17 +37,17 @@ export const GoldCollection = () => {
         viewport={{ once: true, margin: "-100px" }}
       >
         {/* Section Header */}
-        <motion.div className="text-center mb-20" variants={itemVariants}>
-          <h2 className="text-6xl font-light text-brown mb-4">
+        <motion.div className="text-center mb-10 sm:mb-16 md:mb-20" variants={itemVariants}>
+          <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-light text-brown mb-2 sm:mb-4">
             Divine Collections
           </h2>
-          <p className="text-sand text-lg max-w-2xl mx-auto">
+          <p className="text-sand text-base sm:text-lg max-w-2xl mx-auto">
             Where ancient wisdom meets modern elegance, each piece tells a story
             of divine inspiration
           </p>
         </motion.div>
 
-        <div className="grid lg:grid-cols-2 gap-20 items-start">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 sm:gap-12 md:gap-16 lg:gap-20 items-start">
           {/* Left Content - Athena Rings */}
           <motion.div variants={itemVariants} className="relative">
             <div className="relative aspect-[4/5] mb-8 group">
@@ -69,19 +69,19 @@ export const GoldCollection = () => {
               />
 
               <div className="pl-8">
-                <h2 className="text-5xl font-light text-brown leading-tight mb-6">
+                <h2 className="text-3xl sm:text-4xl md:text-5xl font-light text-brown leading-tight mb-4 sm:mb-6">
                   The Power of <br />
                   <span className="font-medium">Divine Wisdom</span>
                 </h2>
 
                 <motion.div
                   whileHover={{ scale: 1.02 }}
-                  className="p-8 bg-white/40 backdrop-blur-sm rounded-xl shadow-lg hover:shadow-xl transition-all duration-300"
+                  className="p-4 sm:p-6 md:p-8 bg-white/40 backdrop-blur-sm rounded-xl shadow-lg hover:shadow-xl transition-all duration-300"
                 >
-                  <h3 className="text-2xl text-darkGray mb-4 font-medium">
+                  <h3 className="text-xl sm:text-2xl text-darkGray mb-2 sm:mb-4 font-medium">
                     Athena Collection
                   </h3>
-                  <p className="text-sand text-lg leading-relaxed">
+                  <p className="text-sand text-base sm:text-lg leading-relaxed">
                     Crafted in 14K yellow gold, these geometric rings embody the
                     wisdom and strategic brilliance of Athena. Each angle
                     represents clarity of thought and divine intelligence,
@@ -114,19 +114,19 @@ export const GoldCollection = () => {
               />
 
               <div className="pl-8">
-                <h2 className="text-5xl font-light text-brown leading-tight mb-6">
+                <h2 className="text-3xl sm:text-4xl md:text-5xl font-light text-brown leading-tight mb-4 sm:mb-6">
                   The Essence of <br />
                   <span className="font-medium">Divine Beauty</span>
                 </h2>
 
                 <motion.div
                   whileHover={{ scale: 1.02 }}
-                  className="p-8 bg-white/40 backdrop-blur-sm rounded-xl shadow-lg hover:shadow-xl transition-all duration-300"
+                  className="p-4 sm:p-6 md:p-8 bg-white/40 backdrop-blur-sm rounded-xl shadow-lg hover:shadow-xl transition-all duration-300"
                 >
-                  <h3 className="text-2xl text-darkGray mb-4 font-medium">
+                  <h3 className="text-xl sm:text-2xl text-darkGray mb-2 sm:mb-4 font-medium">
                     Hathor Collection
                   </h3>
-                  <p className="text-sand text-lg leading-relaxed">
+                  <p className="text-sand text-base sm:text-lg leading-relaxed">
                     These statement earrings in 14K yellow gold channel the
                     essence of Hathor, goddess of beauty and love. Their bold
                     geometric design creates a harmonious balance of strength
@@ -139,11 +139,11 @@ export const GoldCollection = () => {
           </motion.div>
         </div>
 
-        <motion.div variants={itemVariants} className="text-center mt-20">
+        <motion.div variants={itemVariants} className="text-center mt-10 sm:mt-16 md:mt-20">
           <motion.button
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
-            className="px-12 py-5 bg-sand text-white rounded-full hover:bg-darkGray transition-all duration-300 shadow-xl hover:shadow-2xl text-lg font-medium tracking-wide"
+            className="px-6 sm:px-10 md:px-12 py-3 sm:py-4 md:py-5 bg-sand text-white rounded-full hover:bg-darkGray transition-all duration-300 shadow-xl hover:shadow-2xl text-base sm:text-lg font-medium tracking-wide"
           >
             Explore the Divine Collection
           </motion.button>

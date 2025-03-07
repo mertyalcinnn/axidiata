@@ -5,7 +5,7 @@ import Image from "next/image";
 
 export const DivinityCollection = () => {
   return (
-    <section className="py-32 bg-gradient-to-b from-sand/10 to-white overflow-hidden">
+    <section className="py-16 sm:py-24 md:py-32 bg-gradient-to-b from-sand/10 to-white overflow-hidden">
       <motion.div
         className="container mx-auto px-4"
         initial="hidden"
@@ -20,7 +20,7 @@ export const DivinityCollection = () => {
         }}
       >
         {/* Left Side - Apollo Rings */}
-        <div className="grid lg:grid-cols-2 gap-20 items-start">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 sm:gap-12 md:gap-16 lg:gap-20 items-start">
           <motion.div
             variants={{
               hidden: { opacity: 0, y: 50 },
@@ -55,19 +55,19 @@ export const DivinityCollection = () => {
               />
 
               <div className="pl-8">
-                <h2 className="text-5xl font-light text-brown leading-tight mb-6">
+                <h2 className="text-3xl sm:text-4xl md:text-5xl font-light text-brown leading-tight mb-4 sm:mb-6">
                   The Light of <br />
                   <span className="font-medium">Divine Sun</span>
                 </h2>
 
                 <motion.div
                   whileHover={{ scale: 1.02 }}
-                  className="p-8 bg-white/40 backdrop-blur-sm rounded-xl shadow-lg hover:shadow-xl transition-all duration-300"
+                  className="p-4 sm:p-6 md:p-8 bg-white/40 backdrop-blur-sm rounded-xl shadow-lg hover:shadow-xl transition-all duration-300"
                 >
-                  <h3 className="text-2xl text-darkGray mb-4 font-medium">
+                  <h3 className="text-xl sm:text-2xl text-darkGray mb-2 sm:mb-4 font-medium">
                     Apollo Collection
                   </h3>
-                  <p className="text-sand text-lg leading-relaxed">
+                  <p className="text-sand text-base sm:text-lg leading-relaxed">
                     These 14K yellow gold rings capture the radiant essence of
                     Apollo, god of light and arts. Each piece reflects the
                     sun&lsquos brilliance, combining fluid forms with bold
@@ -114,19 +114,19 @@ export const DivinityCollection = () => {
               />
 
               <div className="pl-8">
-                <h2 className="text-5xl font-light text-brown leading-tight mb-6">
+                <h2 className="text-3xl sm:text-4xl md:text-5xl font-light text-brown leading-tight mb-4 sm:mb-6">
                   The Grace of <br />
                   <span className="font-medium">Divine Love</span>
                 </h2>
 
                 <motion.div
                   whileHover={{ scale: 1.02 }}
-                  className="p-8 bg-white/40 backdrop-blur-sm rounded-xl shadow-lg hover:shadow-xl transition-all duration-300"
+                  className="p-4 sm:p-6 md:p-8 bg-white/40 backdrop-blur-sm rounded-xl shadow-lg hover:shadow-xl transition-all duration-300"
                 >
-                  <h3 className="text-2xl text-darkGray mb-4 font-medium">
+                  <h3 className="text-xl sm:text-2xl text-darkGray mb-2 sm:mb-4 font-medium">
                     Venera Collection
                   </h3>
-                  <p className="text-sand text-lg leading-relaxed">
+                  <p className="text-sand text-base sm:text-lg leading-relaxed">
                     This exquisite 14K yellow gold ring embodies Venus&lsquos
                     divine grace and beauty. The sculptural profile captures the
                     essence of love and harmony, creating a piece that
@@ -151,12 +151,12 @@ export const DivinityCollection = () => {
               },
             },
           }}
-          className="text-center mt-20"
+          className="text-center mt-10 sm:mt-16 md:mt-20"
         >
           <motion.button
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
-            className="px-12 py-5 bg-sand text-white rounded-full hover:bg-darkGray transition-all duration-300 shadow-xl hover:shadow-2xl text-lg font-medium tracking-wide"
+            className="px-6 sm:px-10 md:px-12 py-3 sm:py-4 md:py-5 bg-sand text-white rounded-full hover:bg-darkGray transition-all duration-300 shadow-xl hover:shadow-2xl text-base sm:text-lg font-medium tracking-wide"
           >
             Discover the Collection
           </motion.button>

@@ -58,7 +58,7 @@ export default function PreorderPage() {
   return (
     <div className="min-h-screen bg-white">
       {/* Banner Section */}
-      <div className="relative h-[400px] w-full mb-16">
+      <div className="relative h-[250px] sm:h-[300px] md:h-[400px] w-full mb-8 sm:mb-12 md:mb-16">
         <div className="absolute inset-0">
           <Image
             src="/images/preorder.jpg" // Banner görselinizi buraya ekleyin
@@ -74,7 +74,7 @@ export default function PreorderPage() {
           <motion.h1
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
-            className="text-5xl font-light mb-6"
+            className="text-3xl sm:text-4xl md:text-5xl font-light mb-3 sm:mb-6"
           >
             Exclusive Pre-order Collection
           </motion.h1>
@@ -82,7 +82,7 @@ export default function PreorderPage() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.2 }}
-            className="text-xl font-light max-w-2xl"
+            className="text-base sm:text-lg md:text-xl font-light max-w-2xl"
           >
             Be among the first to secure our upcoming masterpieces
           </motion.p>
@@ -92,7 +92,7 @@ export default function PreorderPage() {
       <motion.div
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
-        className="container mx-auto px-4 max-w-6xl pb-20"
+        className="container mx-auto px-4 max-w-6xl pb-10 sm:pb-16 md:pb-20"
       >
         <div className="space-y-12">
           <ProductSelection
@@ -105,9 +105,9 @@ export default function PreorderPage() {
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
-              className="bg-white rounded-lg p-6 border border-neutral-200"
+              className="bg-white rounded-lg p-4 sm:p-6 border border-neutral-200"
             >
-              <h2 className="text-2xl font-light mb-6">Pre-order Details</h2>
+              <h2 className="text-xl sm:text-2xl font-light mb-4 sm:mb-6">Pre-order Details</h2>
               <OrderForm
                 onSubmit={handleFormSubmit}
                 selectedProduct={selectedProduct}

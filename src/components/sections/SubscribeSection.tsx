@@ -32,7 +32,7 @@ export const SubscribeSection = () => {
             <div className="relative aspect-square">
               <Image
                 src="/images/subscribe-image.png"
-                alt="AXADiATA Jewelry"
+                alt="AXADIATA Jewelry"
                 fill
                 className="object-cover"
               />
@@ -62,7 +62,7 @@ export const SubscribeSection = () => {
               transition={{ delay: 0.2 }}
               className="text-6xl font-light text-white mb-12"
             >
-              AXADiATA
+              AXADIATA
             </motion.h2>
 
             <motion.p

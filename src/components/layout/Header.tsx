@@ -13,7 +13,7 @@ export default function Header() {
           href="/"
           className="text-2xl sm:text-3xl font-heading font-bold text-gray-800 hover:text-gray-600 transition-colors"
         >
-          AxaDiata
+          AXADIATA
         </Link>
 
         {/* Mobile menu button */}

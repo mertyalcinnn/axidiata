@@ -19,7 +19,7 @@ export function OrderForm({ onSubmit, selectedProduct }: OrderFormProps) {
   };
 
   return (
-    <form onSubmit={handleSubmit} className="space-y-6">
+    <form onSubmit={handleSubmit} className="space-y-4 sm:space-y-6">
       <div>
         <label
           htmlFor="name"
@@ -32,7 +32,7 @@ export function OrderForm({ onSubmit, selectedProduct }: OrderFormProps) {
           name="name"
           id="name"
           required
-          className="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-1 focus:ring-brown focus:border-brown"
+          className="mt-1 block w-full px-3 py-2 text-sm sm:text-base border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-1 focus:ring-brown focus:border-brown"
         />
       </div>
       <div>
@@ -47,12 +47,12 @@ export function OrderForm({ onSubmit, selectedProduct }: OrderFormProps) {
           name="email"
           id="email"
           required
-          className="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-1 focus:ring-brown focus:border-brown"
+          className="mt-1 block w-full px-3 py-2 text-sm sm:text-base border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-1 focus:ring-brown focus:border-brown"
         />
       </div>
       <button
         type="submit"
-        className="w-full bg-brown text-white py-2 px-4 rounded-md hover:bg-brown/90"
+        className="w-full bg-brown text-white py-2 px-4 text-sm sm:text-base rounded-md hover:bg-brown/90"
       >
         Pre-order {selectedProduct.name}
       </button>
