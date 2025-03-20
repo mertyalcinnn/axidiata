@@ -36,7 +36,7 @@ const CollectionIntro = () => {
             className="relative aspect-[3/4] rounded-2xl overflow-hidden"
           >
             <Image
-              src="/images/founder.jpg"
+              src="/images/founder.jpeg"
               alt="Founder"
               fill
               className="object-cover"
