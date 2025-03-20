@@ -103,7 +103,7 @@ const CollectionIntro = () => {
             className="relative aspect-square rounded-full overflow-hidden"
           >
             <Image
-              src="/images/collection/ring-detail.jpg"
+              src="/images/collection/ring-detail.png"
               alt="Ring Detail"
               fill
               className="object-cover"
